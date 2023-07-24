@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    background: rgba(0, 12, 91, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.limpar {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.limpar:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.containers {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: linear-gradient(0deg, rgba(85, 89, 255, 1) 0%, rgba(0, 31, 255, 1) 33%, rgba(0, 23, 182, 1) 60%, rgba(0, 17, 136, 1) 79%, rgba(0, 12, 91, 1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.galeria {
+    margin-top: 10px;
+    width: 90%;
+    min-height: 500px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.init {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.remove {
+    border: none;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: #ccc;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 520px) {
+    .init {
+        display: flex;
+        justify-content: flex-start;
+        height: 200px;
+    }
+
+    .image {
+        margin: 0;
+        overflow: auto;
+    }
+
+    .galeria {
+        width: 100%;
+        height: 200px;
+    }
+
+    .carousel-inner {
+        height: 200px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgba(255, 255, 255, 0.2);
+        display: flex;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
